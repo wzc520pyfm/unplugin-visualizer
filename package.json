@@ -1,17 +1,17 @@
 {
-  "name": "unplugin-starter",
+  "name": "unplugin-visualizer2",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@8.6.12",
   "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/wzc520pyfm/unplugin-visualizer2#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/wzc520pyfm/unplugin-visualizer2.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/wzc520pyfm/unplugin-visualizer2/issues"
   },
   "keywords": [
     "unplugin",
