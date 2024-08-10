@@ -1,21 +1,9 @@
 import commonJs from '@rollup/plugin-commonjs'
-
-// const commonJs = require('@rollup/plugin-commonjs')
 import resolve from '@rollup/plugin-node-resolve'
-
-// const resolve = require('@rollup/plugin-node-resolve').default
 import typescript from '@rollup/plugin-typescript'
-
-// const typescript = require('@rollup/plugin-typescript')
 import alias from '@rollup/plugin-alias'
-
-// const alias = require('@rollup/plugin-alias')
 import postcss from 'rollup-plugin-postcss'
-
-// const postcss = require('rollup-plugin-postcss')
 import postcssUrl from 'postcss-url'
-
-// const postcssUrl = require('postcss-url')
 
 const HTML_TEMPLATE = ['treemap', 'sunburst', 'network', 'flamegraph']
 
