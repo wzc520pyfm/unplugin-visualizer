@@ -65,8 +65,8 @@ function buildHtml(template: TemplateType) {
     const [script, style] = await Promise.all([
       // fs.readFile(path.join(__dirname, '../../dist', 'lib', `${template}.js`), 'utf8'),
       // fs.readFile(path.join(__dirname, '../../dist', 'lib', `${template}.css`), 'utf8'),
-      fs.readFile(path.join(path.resolve(path.dirname('')), '../dist', 'lib', `${template}.js`), 'utf8'),
-      fs.readFile(path.join(path.resolve(path.dirname('')), '../dist', 'lib', `${template}.css`), 'utf8'),
+      fs.readFile(path.join(path.resolve(path.dirname('')), '..', 'lib', `${template}.js`), 'utf8'),
+      fs.readFile(path.join(path.resolve(path.dirname('')), '..', 'lib', `${template}.css`), 'utf8'),
     ])
 
     return buildHtmlTemplate(title, script, data, style)
