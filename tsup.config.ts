@@ -10,4 +10,7 @@ export default <Options>{
   cjsInterop: true,
   splitting: true,
   onSuccess: 'npm run build:fix',
+  external: [
+    'source-map',
+  ],
 }
