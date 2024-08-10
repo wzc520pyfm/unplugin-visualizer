@@ -12,5 +12,6 @@ export default <Options>{
   onSuccess: 'npm run build:fix',
   external: [
     'source-map',
+    'open',
   ],
 }
