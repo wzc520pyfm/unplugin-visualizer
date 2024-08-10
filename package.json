@@ -1,6 +1,5 @@
 {
   "name": "unplugin-visualizer2",
-  "type": "module",
   "version": "0.2.5",
   "packageManager": "pnpm@8.6.12",
   "description": "",
@@ -85,7 +84,7 @@
   "scripts": {
     "build": "npm run build:plugin && npm run build:frontend",
     "build:plugin": "tsup",
-    "build:frontend": "rollup -c rollup.config.js",
+    "build:frontend": "rollup -c rollup.config.mjs",
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
     "lint": "eslint .",
