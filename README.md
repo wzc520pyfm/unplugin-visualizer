@@ -1,28 +1,13 @@
-# unplugin-starter
+# unplugin-visualizer2
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-starter?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-starter)
+[![NPM version](https://img.shields.io/npm/v/unplugin-visualizer2?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-visualizer2)
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
-
-## Template Usage
-
-To use this template, clone it down using:
-
-```bash
-npx degit unplugin/unplugin-starter my-unplugin
-```
-
-And do a global replacement of `unplugin-starter` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+Visualize and analyze your bundle to see which modules are taking up space. Works with any bundler, powered by unplugin.
 
 ## Install
 
 ```bash
-npm i unplugin-starter
+npm i --save-dev unplugin-visualizer2
 ```
 
 <details>
@@ -30,11 +15,13 @@ npm i unplugin-starter
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-starter/vite'
+import UnpluginVisualizer2 from 'unplugin-visualizer2/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    UnpluginVisualizer2({
+      /* options */
+    }),
   ],
 })
 ```
@@ -48,17 +35,18 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Starter from 'unplugin-starter/rollup'
+import UnpluginVisualizer2 from 'unplugin-visualizer2/rollup'
 
 export default {
   plugins: [
-    Starter({ /* options */ }),
+    UnpluginVisualizer2({
+      /* options */
+    }),
   ],
 }
 ```
 
 <br></details>
-
 
 <details>
 <summary>Webpack</summary><br>
@@ -68,8 +56,10 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-starter/webpack')({ /* options */ })
-  ]
+    require('unplugin-visualizer2/webpack')({
+      /* options */
+    }),
+  ],
 }
 ```
 
@@ -82,7 +72,12 @@ module.exports = {
 // nuxt.config.js
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-starter/nuxt', { /* options */ }],
+    [
+      'unplugin-visualizer2/nuxt',
+      {
+        /* options */
+      },
+    ],
   ],
 })
 ```
@@ -99,7 +94,9 @@ export default defineNuxtConfig({
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-starter/webpack')({ /* options */ }),
+      require('unplugin-visualizer2/webpack')({
+        /* options */
+      }),
     ],
   },
 }
@@ -113,11 +110,19 @@ module.exports = {
 ```ts
 // esbuild.config.js
 import { build } from 'esbuild'
-import Starter from 'unplugin-starter/esbuild'
+import UnpluginVisualizer2 from 'unplugin-visualizer2/esbuild'
 
 build({
-  plugins: [Starter()],
+  plugins: [UnpluginVisualizer2()],
 })
 ```
 
 <br></details>
+
+## Usage
+
+### Options
+
+For all options please refer to [docs](https://github.com/btd/rollup-plugin-visualizer?tab=readme-ov-file#how-to-use-generated-files).
+
+This plugin accepts all [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer?tab=readme-ov-file#options) options.

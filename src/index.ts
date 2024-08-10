@@ -6,7 +6,7 @@ import { visualizer } from './core/index'
 
 export const unpluginFactory: UnpluginFactory<Options | ((outputOptions: OutputOptions) => Options) | undefined> = (options = {}) => {
   return {
-    name: 'unplugin-starter',
+    name: 'unplugin-visualizer2',
     rollup: {
       generateBundle(
         outputOptions: NormalizedOutputOptions,
