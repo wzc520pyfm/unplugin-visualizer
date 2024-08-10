@@ -83,7 +83,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "npm run build:plugin && npm run build:frontend",
+    "build:plugin": "tsup",
     "build:frontend": "rollup -c rollup.config.js",
     "dev": "tsup --watch src",
     "build:fix": "esno scripts/postbuild.ts",
