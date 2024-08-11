@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/unplugin-visualizer2?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-visualizer2)
 
-Visualize and analyze your bundle to see which modules are taking up space. Works with any bundler, powered by unplugin.
+Visualize and analyze your bundle to see which modules are taking up space. Works with any bundler(current support rollup and vite), powered by unplugin.
 
 ## Install
 
