@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'preact/hooks'
-import { createFilter } from '../src/shared/create-filter'
+import { createFilter } from '../shared/create-filter'
 
 export type FilterSetter = (value: string) => void
 

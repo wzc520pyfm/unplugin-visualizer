@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs'
 import path from 'node:path'
-import type { BundleId, ModuleLengths, VisualizerData } from '../shared/types'
+import { fileURLToPath } from 'node:url'
+import type { BundleId, ModuleLengths, VisualizerData } from '../../shared/types'
 import type { TemplateType } from './template-types'
 
 function htmlEscape(str: string) {
@@ -61,10 +62,10 @@ export interface RenderTemplateOptions {
 }
 
 function buildHtml(template: TemplateType) {
+  const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
   return async ({ title, data }: RenderTemplateOptions): Promise<string> => {
     const [script, style] = await Promise.all([
-      // fs.readFile(path.join(__dirname, '../../dist', 'lib', `${template}.js`), 'utf8'),
-      // fs.readFile(path.join(__dirname, '../../dist', 'lib', `${template}.css`), 'utf8'),
       fs.readFile(path.join(__dirname, '.', 'lib', `${template}.js`), 'utf8'),
       fs.readFile(path.join(__dirname, '.', 'lib', `${template}.css`), 'utf8'),
     ])

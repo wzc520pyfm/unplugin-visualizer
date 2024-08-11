@@ -1,6 +1,6 @@
 import type { Options as OpnOptions } from 'open'
+import type { Filter } from '../shared/create-filter'
 import type { TemplateType } from './core/template-types'
-import type { Filter } from './shared/create-filter'
 
 export interface Options {
   /**

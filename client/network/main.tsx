@@ -11,7 +11,7 @@ import {
   forceY,
 } from 'd3-force'
 
-import type { ModuleUID } from '../../src/shared/types'
+import type { ModuleUID } from '../../shared/types'
 
 import { COLOR_BASE } from '../color'
 import { useFilter } from '../use-filter'

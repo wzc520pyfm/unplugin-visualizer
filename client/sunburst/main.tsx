@@ -2,12 +2,8 @@ import type { HierarchyRectangularNode } from 'd3-hierarchy'
 import type { FunctionalComponent } from 'preact'
 import { useContext, useMemo, useState } from 'preact/hooks'
 
-import type {
-  ModuleTree,
-  ModuleTreeLeaf,
-  SizeKey,
-} from '../../src/shared/types'
-import { isModuleTree } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf, SizeKey } from '../../shared/types'
+import { isModuleTree } from '../../shared/types'
 
 import { SideBar } from '../sidebar'
 import { useFilter } from '../use-filter'

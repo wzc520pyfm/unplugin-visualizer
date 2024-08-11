@@ -1,7 +1,7 @@
 import type { FunctionalComponent } from 'preact'
 import { useContext, useLayoutEffect, useRef } from 'preact/hooks'
 import type { HierarchyRectangularNode } from 'd3-hierarchy'
-import type { ModuleTree, ModuleTreeLeaf } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf } from '../../shared/types'
 import { PADDING, TOP_PADDING } from './const'
 import { StaticContext } from '.'
 

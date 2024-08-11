@@ -7,8 +7,8 @@ import type {
   ModuleTreeLeaf,
   SizeKey,
   VisualizerData,
-} from '../../src/shared/types'
-import { isModuleTree } from '../../src/shared/types'
+} from '../../shared/types'
+import { isModuleTree } from '../../shared/types'
 
 import type { Id } from '../uid'
 import { generateUniqueId } from '../uid'

@@ -5,12 +5,8 @@ import { format as formatBytes } from 'bytes'
 import type { FunctionalComponent } from 'preact'
 import type { HierarchyRectangularNode } from 'd3-hierarchy'
 import { LABELS } from '../sizes'
-import type {
-  ModuleTree,
-  ModuleTreeLeaf,
-  SizeKey,
-} from '../../src/shared/types'
-import { isModuleTree } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf, SizeKey } from '../../shared/types'
+import { isModuleTree } from '../../shared/types'
 import { StaticContext } from '.'
 
 export interface TooltipProps {

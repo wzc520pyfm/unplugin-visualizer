@@ -1,6 +1,6 @@
 import type { HierarchyRectangularNode } from 'd3-hierarchy'
 import type { FunctionalComponent } from 'preact'
-import type { ModuleTree, ModuleTreeLeaf } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf } from '../../shared/types'
 import color from '../color'
 
 type NodeEventHandler = (

@@ -2,7 +2,7 @@ import type { FunctionalComponent } from 'preact'
 import { useContext } from 'preact/hooks'
 import type { HierarchyRectangularNode } from 'd3-hierarchy'
 
-import type { ModuleTree, ModuleTreeLeaf } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf } from '../../shared/types'
 import { Node } from './node'
 import { StaticContext } from './index'
 

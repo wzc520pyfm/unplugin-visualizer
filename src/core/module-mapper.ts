@@ -6,7 +6,7 @@ import type {
   ModulePart,
   ModuleUID,
   VisualizerData,
-} from '../shared/types'
+} from '../../shared/types'
 
 const HASH_PLACEHOLDER = '!{ROLLUP_VISUALIZER_HASH_PLACEHOLDER}'
 const HASH_PLACEHOLDER_REGEXP = new RegExp(`"${HASH_PLACEHOLDER}-(\\d+)"`, 'g')
@@ -37,7 +37,7 @@ export class ModuleMapper {
   private nodeMetas: Record<string, ModuleIdStorage> = {}
   private counter: number = 0
 
-  constructor(private projectRoot: string | RegExp) {}
+  constructor(private projectRoot: string | RegExp) { }
 
   trimProjectRootId(moduleId: string): string {
     if (typeof this.projectRoot === 'string' && moduleId.startsWith(this.projectRoot))

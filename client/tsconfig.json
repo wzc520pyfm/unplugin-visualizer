@@ -11,8 +11,7 @@
       "*": ["../node_modules/*"]
     },
     "resolveJsonModule": true,
-    "types": [
-    ],
+    "types": [],
     "allowJs": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
@@ -23,6 +22,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["./**/*", "../src/shared/**/*"],
+  "include": ["./**/*", "../shared/**/*"],
   "exclude": ["node_modules"]
 }

@@ -3,19 +3,17 @@ import path from 'node:path'
 import process from 'node:process'
 import buffer from 'node:buffer'
 
-import type { EmittedFile, GetModuleInfo, NormalizedOutputOptions, OutputBundle, OutputOptions, Plugin, PluginContextMeta, RollupError, RollupLog } from 'rollup'
+import type { EmittedFile, GetModuleInfo, NormalizedOutputOptions, OutputBundle, OutputOptions, PluginContextMeta, RollupError, RollupLog } from 'rollup'
 import opn from 'open'
 
-import type { ModuleLengths, ModuleTree, ModuleTreeLeaf, VisualizerData } from '../shared/types'
-import type { Filter } from '../shared/create-filter'
-import { createFilter } from '../shared/create-filter'
+import type { ModuleLengths, ModuleTree, ModuleTreeLeaf, VisualizerData } from '../../shared/types'
+import { createFilter } from '../../shared/create-filter'
 import type { Options as PluginVisualizerOptions } from '../types'
 import { version } from './version'
 
 import type { SizeGetter } from './compress'
 import { createBrotliSizeGetter, createGzipSizeGetter } from './compress'
 
-import type { TemplateType } from './template-types'
 import { ModuleMapper, replaceHashPlaceholders } from './module-mapper'
 import { addLinks, buildTree, mergeTrees } from './data'
 import { getSourcemapModules } from './sourcemap'

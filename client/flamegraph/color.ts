@@ -5,7 +5,7 @@ import { hsl } from 'd3-color'
 import type { HierarchyNode } from 'd3-hierarchy'
 import type { CssColor } from '../color'
 import { COLOR_BASE } from '../color'
-import type { ModuleTree, ModuleTreeLeaf } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf } from '../../shared/types'
 
 // https://www.w3.org/TR/WCAG20/#relativeluminancedef
 const rc = 0.2126

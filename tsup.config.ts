@@ -4,6 +4,7 @@ export default <Options>{
   entryPoints: [
     'src/*.ts',
   ],
+  target: 'esnext',
   clean: true,
   format: ['cjs', 'esm'],
   dts: true,

@@ -1,6 +1,6 @@
 import type { GetModuleInfo } from 'rollup'
-import type { ModuleLengths, ModuleTree, ModuleTreeLeaf } from '../shared/types'
-import { isModuleTree } from '../shared/types'
+import type { ModuleLengths, ModuleTree, ModuleTreeLeaf } from '../../shared/types'
+import { isModuleTree } from '../../shared/types'
 import type { ModuleMapper } from './module-mapper'
 
 interface MappedNode {

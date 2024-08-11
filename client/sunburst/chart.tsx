@@ -2,11 +2,7 @@ import type { FunctionalComponent } from 'preact'
 import { useEffect, useMemo, useState } from 'preact/hooks'
 
 import type { HierarchyRectangularNode } from 'd3-hierarchy'
-import type {
-  ModuleTree,
-  ModuleTreeLeaf,
-  SizeKey,
-} from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf, SizeKey } from '../../shared/types'
 import { Tooltip } from './tooltip'
 import { SunBurst } from './sunburst'
 

@@ -1,6 +1,6 @@
 import type { FunctionalComponent, JSX } from 'preact'
 import { useState } from 'preact/hooks'
-import type { SizeKey } from '../src/shared/types'
+import type { SizeKey } from '../shared/types'
 import { LABELS } from './sizes'
 
 export interface SideBarProps {

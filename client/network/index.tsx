@@ -7,7 +7,7 @@ import type {
   ModuleUID,
   SizeKey,
   VisualizerData,
-} from '../../src/shared/types'
+} from '../../shared/types'
 
 import { getAvailableSizeOptions } from '../sizes'
 import { Main } from './main'

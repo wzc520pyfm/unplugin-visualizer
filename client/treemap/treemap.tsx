@@ -3,7 +3,7 @@ import { useContext, useMemo } from 'preact/hooks'
 import { group } from 'd3-array'
 import type { HierarchyNode, HierarchyRectangularNode } from 'd3-hierarchy'
 
-import type { ModuleTree, ModuleTreeLeaf } from '../../src/shared/types'
+import type { ModuleTree, ModuleTreeLeaf } from '../../shared/types'
 import { Node } from './node'
 import { StaticContext } from './index'
 
